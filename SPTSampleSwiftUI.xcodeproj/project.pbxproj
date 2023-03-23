@@ -11,7 +11,27 @@
 		AAEEC29529CB2CEE002B76C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEEC29429CB2CEE002B76C7 /* ContentView.swift */; };
 		AAEEC29729CB2CF0002B76C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAEEC29629CB2CF0002B76C7 /* Assets.xcassets */; };
 		AAEEC29A29CB2CF0002B76C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAEEC29929CB2CF0002B76C7 /* Preview Assets.xcassets */; };
+		AAEEC2A429CB2DF9002B76C7 /* SpotifyiOS.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEEC2A329CB2DF9002B76C7 /* SpotifyiOS.xcframework */; };
+		AAEEC2A529CB2DF9002B76C7 /* SpotifyiOS.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AAEEC2A329CB2DF9002B76C7 /* SpotifyiOS.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AAEEC2AC29CB33F0002B76C7 /* SpotifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEEC2AB29CB33F0002B76C7 /* SpotifyService.swift */; };
+		AAEEC2AE29CB340F002B76C7 /* SpotifyConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEEC2AD29CB340F002B76C7 /* SpotifyConstant.swift */; };
+		AAEEC2B029CB350F002B76C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEEC2AF29CB350F002B76C7 /* AppDelegate.swift */; };
+		AAEEC2B229CB4697002B76C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEEC2B129CB4697002B76C7 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AAEEC2A629CB2DFA002B76C7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AAEEC2A529CB2DF9002B76C7 /* SpotifyiOS.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AAEEC28F29CB2CEE002B76C7 /* SPTSampleSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPTSampleSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +39,13 @@
 		AAEEC29429CB2CEE002B76C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AAEEC29629CB2CF0002B76C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAEEC29929CB2CF0002B76C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AAEEC2A329CB2DF9002B76C7 /* SpotifyiOS.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SpotifyiOS.xcframework; path = "../../../Downloads/ios-sdk-1.2.3/SpotifyiOS.xcframework"; sourceTree = "<group>"; };
+		AAEEC2A729CB2EDC002B76C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AAEEC2A829CB2FC3002B76C7 /* SPTSampleSwiftUI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SPTSampleSwiftUI-Bridging-Header.h"; sourceTree = "<group>"; };
+		AAEEC2AB29CB33F0002B76C7 /* SpotifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyService.swift; sourceTree = "<group>"; };
+		AAEEC2AD29CB340F002B76C7 /* SpotifyConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyConstant.swift; sourceTree = "<group>"; };
+		AAEEC2AF29CB350F002B76C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AAEEC2B129CB4697002B76C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAEEC2A429CB2DF9002B76C7 /* SpotifyiOS.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +65,7 @@
 			children = (
 				AAEEC29129CB2CEE002B76C7 /* SPTSampleSwiftUI */,
 				AAEEC29029CB2CEE002B76C7 /* Products */,
+				AAEEC2A229CB2DF9002B76C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,10 +80,16 @@
 		AAEEC29129CB2CEE002B76C7 /* SPTSampleSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				AAEEC2A729CB2EDC002B76C7 /* Info.plist */,
 				AAEEC29229CB2CEE002B76C7 /* SPTSampleSwiftUIApp.swift */,
 				AAEEC29429CB2CEE002B76C7 /* ContentView.swift */,
 				AAEEC29629CB2CF0002B76C7 /* Assets.xcassets */,
 				AAEEC29829CB2CF0002B76C7 /* Preview Content */,
+				AAEEC2A829CB2FC3002B76C7 /* SPTSampleSwiftUI-Bridging-Header.h */,
+				AAEEC2AB29CB33F0002B76C7 /* SpotifyService.swift */,
+				AAEEC2AD29CB340F002B76C7 /* SpotifyConstant.swift */,
+				AAEEC2AF29CB350F002B76C7 /* AppDelegate.swift */,
+				AAEEC2B129CB4697002B76C7 /* SceneDelegate.swift */,
 			);
 			path = SPTSampleSwiftUI;
 			sourceTree = "<group>";
@@ -67,6 +102,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		AAEEC2A229CB2DF9002B76C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAEEC2A329CB2DF9002B76C7 /* SpotifyiOS.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +120,7 @@
 				AAEEC28B29CB2CEE002B76C7 /* Sources */,
 				AAEEC28C29CB2CEE002B76C7 /* Frameworks */,
 				AAEEC28D29CB2CEE002B76C7 /* Resources */,
+				AAEEC2A629CB2DFA002B76C7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -99,6 +143,7 @@
 				TargetAttributes = {
 					AAEEC28E29CB2CEE002B76C7 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -137,8 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAEEC2AE29CB340F002B76C7 /* SpotifyConstant.swift in Sources */,
 				AAEEC29529CB2CEE002B76C7 /* ContentView.swift in Sources */,
+				AAEEC2AC29CB33F0002B76C7 /* SpotifyService.swift in Sources */,
+				AAEEC2B029CB350F002B76C7 /* AppDelegate.swift in Sources */,
 				AAEEC29329CB2CEE002B76C7 /* SPTSampleSwiftUIApp.swift in Sources */,
+				AAEEC2B229CB4697002B76C7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,25 +313,31 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SPTSampleSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 7A8Q75M3WV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SPTSampleSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alphitardian.SPTSampleSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SPTSampleSwiftUI/SPTSampleSwiftUI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -293,25 +348,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SPTSampleSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 7A8Q75M3WV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SPTSampleSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alphitardian.SPTSampleSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SPTSampleSwiftUI/SPTSampleSwiftUI-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

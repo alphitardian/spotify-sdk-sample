@@ -9,6 +9,10 @@ import SwiftUI
 
 @main
 struct SPTSampleSwiftUIApp: App {
+    
+    // Uncomment if you want to use scene delegate to handle the lifecycle
+    // @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
